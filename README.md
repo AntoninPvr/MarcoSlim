@@ -4,6 +4,10 @@
     MarcoSlim
 </h1>
 
+![Static Badge](https://img.shields.io/badge/status-archive-red)
+![GitHub Release](https://img.shields.io/github/v/release/AntoninPvr/MarcoSlim)
+![GitHub License](https://img.shields.io/github/license/AntoninPvr/MarcoSlim)
+
     ⚠️ DISCONTINUED
     This project is discontinued and will not be updated anymore.
     Please refer to the new version of the Marco project
@@ -11,8 +15,6 @@
 ### New version MarcoX is available here : https://github.com/AntoninPvr/MarcoX
 
 ---
-
-Current version is `6.1`.
 
 ## Preface 
 MarcoSlim is an upgrade of original Marco. Project had been launched during the 2023 BDE of Télécom Physique Strasbourg. Original Marco was based on Raspberry PI and old style resistive screen and 3 meters of cables and adapters hardly stuff in rectangular 3D printed case.
