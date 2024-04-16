@@ -1,12 +1,22 @@
 <h1 align="center">
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/img/logo.png?raw=true" alt="MarcoX Logo" width="200"></a>
+    <img src="https://github.com/AntoninPvr/MarcoSlim/blob/main/img/logo.png?raw=true" alt="MarcoSlim Logo" width="200"></a>
     <br>
-    MarcoX
+    MarcoSlim
 </h1>
 
-Current version is `8.0`.
+Current version is `6.1`.
 
-MarcoX is the new version of the original Marco project based on Raspberry PI and old style resistive screen. This new version is based on Orange PI zero 2W with a 7" capacitive touch screen. This modernized versiona aims to be more reliable and easier to replicate.
+    DISCONTINUED
+    This project is discontinued and will not be updated anymore.
+    Please refer to the new version of the Marco project
+
+New version MarcoX is available here : https://github.com/AntoninPvr/MarcoX
+
+---
+## Preface 
+MarcoSlim is an upgrade of original Marco. Project had been launched during the 2023 BDE of Télécom Physique Strasbourg. Original Marco was based on Raspberry PI and old style resistive screen and 3 meters of cables and adapters hardly stuff in rectangular 3D printed case.
+
+This new version is based on Orange PI zero 2W with a 7" capacitive touch screen. This modernized versiona aims to be more reliable and compact with a new RFID reader.
 
 Software was also modernized and is available here : https://github.com/LOISGALLAUD/MARCONEO
 
@@ -15,8 +25,8 @@ Marco is a project that aims to create a payment terminal for a school BDE (Fren
 This project is related to InsidePSBS app. Students can check their account and history on this mobile app available on IOS and Android. https://github.com/info-telecom-strasbourg/InsidePSBS (Reserved to TPS and ESBS students)
 
 <p float="left">
-  <img src="https://github.com/AntoninPvr/MarcoX/blob/main/img/render/full.JPG?raw=true"  width="46%"/>
-  <img src="https://github.com/AntoninPvr/MarcoX/blob/main/img/render/frame_bellow.JPG?raw=true" width="50%" /> 
+  <img src="https://github.com/AntoninPvr/MarcoSlim/blob/main/img/render/full.JPG?raw=true"  width="46%"/>
+  <img src="https://github.com/AntoninPvr/MarcoSlim/blob/main/img/render/internal.JPG?raw=true" width="50%" /> 
 </p>
 
 ## Specifications
@@ -29,10 +39,11 @@ This project is related to InsidePSBS app. Students can check their account and 
     * RAM: 1GB LPDDR4
     * Wi-Fi: 802.11 ac (Wi-Fi 5)
     * Bluetooth: 5.0
+* **Battery**: 29.6Wh Li-ion (4x 3.7V 2000mAh)
 * **Dimensions**:
-    * Length: 210mm
-    * Depth: 150mm
-    * Height: 90mm
+    * Length: 200mm
+    * Depth: 129mm
+    * Height: 38mm
 
 ## Shopping list
 
@@ -42,6 +53,7 @@ This project is related to InsidePSBS app. Students can check their account and 
 * Micro SD card 16GB ore more, U3 speed class or more
 * 7" Waveshare touch screen or compatible with HDMI input
 * 125kHz RFID reader
+* 4x 3.7V 2000mAh Li-ion battery
 * USB-C power supply
 * mini HDMI to HDMI 100mm cable: A2 to C1
 * USB-C to micro usb 100mm cable: W3R to T1B
@@ -50,9 +62,10 @@ This project is related to InsidePSBS app. Students can check their account and 
     ---
 
 ### Mechanical parts
-* M3 screws 16mm flat-head x4
-* M3 screws 10mm x10
-* M3 inserts x14
+* M4 screws 16mm x4
+* M4 inserts x4
+* M3 screws 10mm x15
+* M3 inserts x15
 
     ---
 ### Parts details
@@ -87,54 +100,53 @@ Tested settings, but feel free to adapt them to your printer and material.:
 * Nozzle diameter: 0.4mm
 * Material: PLA or PETG
 
+*Note: PTEG is recommended for better water and UV resistance.*
+
+### All parts
+
+<p align="center">
+    <img alt="Front" src="https://github.com/AntoninPvr/MarcoX/blob/main/img/render/front.JPG?raw=true" width="45%">
+&nbsp;
+    <img alt="Screen BAck" src="https://github.com/AntoninPvr/MarcoX/blob/main/img/screen_back.jpg?raw=true" width="45%">
+</p>
+
+### Front
+
+**File:** [front.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/front.STL)
+
+The front cover hold the screen and allow it to be attached without overthickness. It also includes the RFID reader coil use for card detection, USB-C charging hole, power activity LED and Power button. This part is attached to the enclosure with 4 M4 screws, and provide a sort of seal to prevent dust and water to enter the enclosure.
+
 ### Internal frame
 
-**File:** [internal_frame.STL](https://github.com/AntoninPvr/MarcoX/blob/main/internal_frame.STL)
+**File:** [internal_frame.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/internal_frame.STL)
 
-This frame is attached to the screen and is used to fix all other parts.
+This frame is attached to the screen and is used to mount Orange PI, Li-ion batteries, PCB and Wi-Fi antenna.
 
 *Note: For this part adding support may improve print quality*
 
-### Top cover frame
+### Cover
 
-**File:** [top_cover_frame.STL](https://github.com/AntoninPvr/MarcoX/blob/main/top_cover_frame.STL)
+**File:** [cover.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/cover.STL)
 
-This frame allow screen and top cover to be attached without overthickness and to secure enclosure and removable top cover.
-
-### Card reader mount
-
-**File:** [card_reader.STL](https://github.com/AntoninPvr/MarcoX/blob/main/card_reader.STL)
-
-This mount is used to fix the RFID reader to the enclosure as close as possible to improve card detection.
+The back cover is used to close the enclosure. It is attached to the enclosure with 4 M4 screws.
 
 ### Orange PI Standoff
 
-**File:** [orange_pi_standoff.STL](https://github.com/AntoninPvr/MarcoX/blob/main/orange_pi_standoff.STL)
+**File:** [orange_pi_standoff.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/orange_pi_standoff.STL)
 
-Internal frame allow use of a custom PCB to fix Orange PI to internal frame and embed battery management and RFID reader circuit. This feature is not yet implemented, therefore this part is a placeholder.
+Standoff are used to maintain Orange PI in place and add spacing for electronics components bellow. They are attached to the internal frame with 3 M3 screws.
 
-## Enclosure 
+### Battery holder 
 
-<p align="center">
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/img/render/enclosure.JPG?raw=true"  width="48%"/>
-</p>
+**File:** [18650_4_holder.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/18650_4_holder.STL)
 
-This is basically a wooden box with finger joints. It is composed of 5 parts: 1 base, 2 long sides and 2 short sides.
+Battery holder is used to maintain 4 Li-ion batteries in place. It is attached to the internal frame with 4 M3 screws.
 
-### Laser cut parts
-Laser cut parts are in `.svg` format. Red lines width is 0.2mm and are adapted for [Trotec Speedy 100](https://www.troteclaser.com/static/pdf/speedy-100/Fiche-technique-Speedy-100C-8063-fr.pdf) laser cutter.
-Material: 6mm plywood recommended.
+### Power button
 
-<p align="center">
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/laser/top_cover.svg?raw=true"  width="48%"/>
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/laser/enclosure_base.svg?raw=true" width="48%" /> 
-</p>
+**File:** [power_button.STL](https://github.com/AntoninPvr/MarcoSlim/blob/main/power_button.STL)
 
-<p align="center">
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/laser/enclosure_long_side.svg?raw=true"  width="30%"/>
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/laser/enclosure_long_side_charging_hole.svg?raw=true" width="30%" /> 
-    <img src="https://github.com/AntoninPvr/MarcoX/blob/main/laser/enclosure_short_side.svg?raw=true" width="30%" />
-</p>
+Power button.
 
 ## Related projects
 
